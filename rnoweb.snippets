@@ -1,0 +1,18 @@
+#
+# Snipmate Snippets for Rnw 
+#
+
+snippet r
+	<<<{r ${1:chung_tag}, echo = ${2:TRUE}, warning = ${3:FALSE}, include = ${4:TRUE}>>=
+	${5:}
+	\@
+	${6:}
+
+snippet ri
+	\Sexpr{${1:}}${2:}
+
+snippet chch
+	<<${1:chunk_tag}, child='${2:file.Rnw}'>>=
+	@
+	${3:}
+
