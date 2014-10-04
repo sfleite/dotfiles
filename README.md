@@ -7,3 +7,6 @@ cd .dotfiles
 ./makesymlinks.sh
 ```
 
+Novas implementações:
+* adicionar no `makesymlinks.sh` links para os meus snippets
+
