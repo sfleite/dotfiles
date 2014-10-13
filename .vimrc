@@ -304,9 +304,24 @@ let r_indent_ess_compatible = 0
 " selecionar Terminal
 "let vimrplugin_term = "/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal" 
 
-" By default, Vim indents code by 8 spaces. Most people prefer 4 " spaces: 
-set sw=4 
 
+"------------------------------------
+" By default, Vim indents code by 8 spaces. Most people prefer 4 " spaces: 
+" size of a hard tabstop
+set tabstop=4
+
+" size of an "indent"
+set shiftwidth=4
+
+" a combination of spaces and tabs are used to simulate tab stops at a width
+" other than the (hard)tabstop
+set softtabstop=4
+
+" make "tab" insert indents instead of tabs at the beginning of a line
+set smarttab
+
+" always uses spaces instead of tab characters
+set expandtab
 
 
 "------------------------------------
@@ -389,9 +404,9 @@ nnoremap <silent> <Leader>< :resize -4<cr>
 
 "------------------------------
 " evervim - notas do evernote no vim
-" let g:evervim_devtoken=''
-
-
+" let g:evervim_devtoken='
+"
+"
 "------------------------------
 " sempre mostrar a barra inferior com o status
 set laststatus=2
