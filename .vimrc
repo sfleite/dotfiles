@@ -191,14 +191,13 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'vim-scripts/VOoM'
 Bundle 'kshenoy/vim-signature'
-Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'vim-scripts/tComment'
 Bundle 'altercation/vim-colors-solarized'
-
 
 "------------------------------------
 " LATEX
@@ -423,4 +422,14 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 au BufRead,BufNewFile *.rnw set ft=rnoweb.r.tex
 " arquivos  Rmd usando snippets de r e rmd
 au BufRead,BufNewFile *.rmd set ft=rmd.r
+
+
+"------------------------------
+" Backup files
+" turn on backup
+set backup
+" Set where to store backups
+set backupdir=~/.vimbackup
+" Set where to store swap files
+set dir=~/.vimbackup
 
