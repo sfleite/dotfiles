@@ -84,4 +84,5 @@ alias tmux.conf='vim ~/.tmux.conf'
 alias tt='tmuxinator'
 alias rmtrash='cd ~/.Trash/ ; rm -R * ; cd'
 alias tmux='tmux -u'	# tmux aberto com utf8
+alias t='trans :pt'	# tmux aberto com utf8
 

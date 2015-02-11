@@ -67,8 +67,6 @@ let g:solarized_termcolors=256
 highlight Visual       term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
 
 
-
-
 " ------------------------------
 " funções do mouse funcionando no terminal com tmux
 set mouse=a
@@ -140,7 +138,7 @@ nnoremap JJJJ <Nop>
 " Vundle
 " https://github.com/gmarik/Vundle.vim
 
-filetype off                  " required
+" filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -198,6 +196,9 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'vim-scripts/tComment'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Eckankar/vim-latex-folding'
+
 
 "------------------------------------
 " LATEX
@@ -213,12 +214,12 @@ set grepprg=grep\ -nH\ $*
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
-"let g:tex_flavor='latex'
+let g:tex_flavor='latex'
 
 
 " --------------------------------------
 " Desabilitando atalhos chatos como ã para /item e outros
-let g:Tex_AdvancedMath = 0 "desabilitando o ~a criar mathcal ou \cite
+" let g:Tex_AdvancedMath = 0 "desabilitando o ~a criar mathcal ou \cite
 "let g:Tex_EnvironmentMaps=0
 "let g:Tex_EnvironmentMenus=0
 "let g:Tex_FontMaps=0
@@ -228,31 +229,9 @@ let g:Tex_AdvancedMath = 0 "desabilitando o ~a criar mathcal ou \cite
 
 " quando reinstalar o plugin é necessário inserir novamente
 " esta linha de comando no arquivo 
-" ~/.vim/ftpugin/tex.vim
+" ~/.vim/ftplugin/tex.vim
 imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine 
 
-
-
-" --------------------------------------
-" ################################################# 
-" http://www.lepem.ufc.br/jaa/vim-r-plugin.html
-
-"------------------------------------
-" Behavior
-"------------------------------------
-"let maplocalleader = ","
-"let mapleader = ";"
-
-"------------------------------------
-" Appearance
-"------------------------------------
-" colorscheme southernlights
-
-"------------------------------------
-" Showmarks
-"------------------------------------
-let marksCloseWhenSelected = 0
-let showmarks_include="abcdefghijklmnopqrstuvwxyz"
 
 "------------------------------------
 " Vim-R-plugin
@@ -263,8 +242,8 @@ if $DISPLAY != ""
 	let vimrplugin_openhtml = 1
 endif
 if has("gui_running")
-	inoremap ,<tab> <c-x><c-o>
-	inoremap .<tab> <c-x><c-a>
+	inoremap ,<tab> <C-x><C-o>
+	inoremap .<tab> <C-x><C-a>
 else
 	inoremap <Nul> <C-x><C-o>
 	inoremap <Nul> <C-x><C-a>
@@ -293,15 +272,6 @@ let vimrplugin_show_args = 1
 " identar os argumentos de uma função qualquer 
 " partindo do '<-'
 let r_indent_ess_compatible = 0
-
-"------------------------------------
-" R
-" terminal de saída 
-" selecionar iTerm
-"let vimrplugin_term_cmd = "/Applications/Utilities/iTerm.app/Contents/MacOS/iTerm -t R"
-
-" selecionar Terminal
-"let vimrplugin_term = "/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal" 
 
 
 "------------------------------------
@@ -385,9 +355,9 @@ map <leader>xx <C-_><C-_>
 "------------------------------
 " autocompletar
 " completa busca o nome da função no R ou LaTeX
-imap ,<tab> <c-x><c-o>
+imap ,<tab> <C-x><C-o>
 " completa arguemntos de uma função 
-imap .<tab> <c-x><c-a>
+imap .<tab> <C-x><C-a>
 " completa palavras buscando nos dicionários, tanto inglês como português
 imap ,.<tab> <C-x><C-k>
 " completa linhas inteiras com base nas linhas que já existem no arquivo
@@ -432,4 +402,15 @@ set backup
 set backupdir=~/.vimbackup
 " Set where to store swap files
 set dir=~/.vimbackup
+
+
+"------------------------------
+" translate shell
+" shift-K to view the translation of the word under the cursor.
+set keywordprg=trans\ :ja
+
+
+"------------------------------
+" Vim LatexBox Folding
+
 
