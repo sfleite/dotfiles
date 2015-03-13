@@ -46,13 +46,14 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history python pip brew brew-cask osx tmuxinator tmux web-search vundle)
+plugins=(git history python pip brew brew-cask osx tmuxinator tmux web-search vundle r)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin"
+export PATH=~/anaconda/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -77,12 +78,16 @@ export LANG=en_US.UTF-8  # necessário para o tmux reconhecer os acentos é, á,
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim='/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim'
+alias vim='/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim --servername VIM'
+alias py='/usr/local/bin/python'    # py: python instalado do brew
+                                    # python: para o python do brew com o pip
+alias julia='/Applications/Julia-0.3.6.app/Contents/Resources/julia/bin/julia'
+alias ju=julia
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias tmux.conf='vim ~/.tmux.conf'
 alias tt='tmuxinator'
 alias rmtrash='cd ~/.Trash/ ; rm -R * ; cd'
 alias tmux='tmux -u'	# tmux aberto com utf8
-alias t='trans :pt'	# tmux aberto com utf8
+alias t='trans :pt'	# translate 
 

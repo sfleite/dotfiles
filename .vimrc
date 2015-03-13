@@ -183,24 +183,27 @@ filetype plugin indent on    " required
 " Meus plugins
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/AutoClose'
-Bundle 'jcfaria/Vim-R-plugin'
+Bundle 'vim-scripts/Vim-R-plugin'
 Bundle 'kien/ctrlp.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'vim-scripts/VOoM'
 Bundle 'kshenoy/vim-signature'
-" Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'msanders/snipmate.vim'
-Bundle 'Lokaltog/powerline'
 Bundle 'vim-scripts/tComment'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Eckankar/vim-latex-folding'
+Bundle 'klen/python-mode'
+" Bundle 'jpalardy/vim-slime'
+" Bundle 'Lokaltog/powerline'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'ervandew/supertab'
 
 
-"------------------------------------
+"-----------------------------------i
 " LATEX
 "
 let g:tex_flavor='latex'
@@ -335,16 +338,13 @@ set hlsearch
 " ------------------------------
 " Python 
 " Disable pylint checking every save
-" let g:pymode_lint_write = 0
-
+let g:pymode_lint_write = 0
 " Set key 'R' for run python code
-" let g:pymode_run_key = 'R'
-
+let g:pymode_run_key = 'R'
 " Load show documentation plugin
-" let g:pymode_doc = 1
-
+let g:pymode_doc = 1
 " Key for show python documentation
-" let g:pymode_doc_key = 'K'
+let g:pymode_doc_key = 'K'
 
 
 "------------------------------
@@ -362,6 +362,7 @@ imap .<tab> <C-x><C-a>
 imap ,.<tab> <C-x><C-k>
 " completa linhas inteiras com base nas linhas que já existem no arquivo
 imap .,<tab> <C-x><C-l>
+
 
 "------------------------------
 " Maps to resizing a window split
@@ -411,6 +412,28 @@ set keywordprg=trans\ :ja
 
 
 "------------------------------
-" Vim LatexBox Folding
+" Syntastic - sintax check
+" se deixar todas as opções abaixo habilitadas vira uma zona
+set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
+
+"------------------------------
+" Julia
+autocmd BufRead,BufNewFile *.jl set filetype=julia
+
+
+"------------------------------
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
+" para enviar um comando do vim para termianl com o Julia digitar: C-c C-c 
+" ou espaço em visual mode
+map <Space> <C-c><C-c>
 

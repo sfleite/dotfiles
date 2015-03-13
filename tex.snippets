@@ -141,7 +141,7 @@ snippet sparagraph
 	${3}
 	% subparagraph $2 (end)
 snippet item
-	\item[${1:description}] ${2:item}
+	\item[${1}] ${2}
 snippet figura
 	${1:Figura}~\ref{fig:${2}} ${3}
 snippet tabela
@@ -161,13 +161,34 @@ snippet it
 snippet bf
 	{\bf ${1}} ${2}
 # Cor Texto
-snippet textcolor
-	\textcolor{${1:color}}{${2:text}} ${3}
+snippet color
+	{\color{${1:color}}{${2:text}}} ${3}
 # cite
 snippet cite
 	\cite{${1}} ${2}
 # cite online
 snippet citeo
 	\citeonline{${1}} ${2}
-
-
+# aspas `` ''
+snippet `
+	``${1}'' ${2}
+# index
+snippet index
+	\index{${1}} ${2}
+# ednote
+snippet	ednote
+	\ednote{${1}} ${2}
+# edissue
+snippet	edissue
+	\edissue{${1}} ${2}
+# todolist
+snippet todolist
+	\begin{${1:todolist}}
+		\item ${2}
+	\end{$1}
+# eqref
+snippet eqref
+	\eqref{${1}} ${2}
+# ref
+snippet ref
+	\ref{${1}} ${2}
