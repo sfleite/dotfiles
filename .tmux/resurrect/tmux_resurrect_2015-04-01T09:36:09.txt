@@ -1,0 +1,14 @@
+pane	0	0	:weechat	1	:*	0	:/Users/roney	1	zsh	:
+pane	0	1	:t	0	: 	0	:/Users/roney	1	zsh	:
+pane	0	1	:t	0	: 	1	:/Users/roney	0	zsh	:
+pane	0	1	:t	0	: 	2	:/Users/roney	0	zsh	:
+pane	0	1	:t	0	: 	3	:/Users/roney	0	zsh	:
+pane	0	2	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM cap3.tex
+pane	0	2	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM make
+pane	0	2	:tese	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	3	:terminal	0	:-	0	:/Users/roney	1	vim	:vim /Users/roney/.tmux.conf
+window	0	0	1	:*	ccfe,181x48,0,0,1
+window	0	1	0	: 	d602,181x48,0,0{90x48,0,0[90x24,0,0,2,90x23,0,25,3],90x48,91,0[90x24,91,0,4,90x23,91,25,5]}
+window	0	2	0	: 	69ea,181x48,0,0{104x48,0,0,6,76x48,105,0[76x33,105,0,7,76x14,105,34,8]}
+window	0	3	0	:-	cd06,181x48,0,0,9
+state	0	0

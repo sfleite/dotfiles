@@ -52,12 +52,20 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin"
-export PATH=~/anaconda/bin:$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin"
+# export PATH=~/anaconda/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8  # necessário para o tmux reconhecer os acentos é, á, ç, etc
+# necessário colocar tudo isso para o mosh funcionar
+export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -78,9 +86,8 @@ export LANG=en_US.UTF-8  # necessário para o tmux reconhecer os acentos é, á,
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim='/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim --servername VIM'
+alias vi='/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM'
 alias py='/usr/local/bin/python'    # py: python instalado do brew
-                                    # python: para o python do brew com o pip
 alias julia='/Applications/Julia-0.3.6.app/Contents/Resources/julia/bin/julia'
 alias ju=julia
 alias zshrc='vim ~/.zshrc'
@@ -89,5 +96,9 @@ alias tmux.conf='vim ~/.tmux.conf'
 alias tt='tmuxinator'
 alias rmtrash='cd ~/.Trash/ ; rm -R * ; cd'
 alias tmux='tmux -u'	# tmux aberto com utf8
-alias t='trans :pt'	# translate 
-
+alias t='trans'	# translate 
+alias t1='trans pt:en -I'	# translate 
+alias t2='trans pt:en -I -b'	# translate 
+alias t3='trans en:pt -I'	# translate 
+alias t4='trans en:pt -I -b'	# translate 
+alias c='g++' # compilador g++ (c++)

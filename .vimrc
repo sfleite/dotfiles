@@ -15,16 +15,11 @@ set encoding=utf-8
 "mostra o modo em que estamos
 set showmode 
 
-
-" --------------------------------------
 "faz o vim ignorar maiúsculas e minúsculas nas buscas
 set ignorecase 
 
-
-" --------------------------------------
 "  linas destacadas
 set cursorline
-" hi CursorLine ctermbg=yellow cterm=none
 
 " usar 256 cores
 set t_Co=256
@@ -35,7 +30,6 @@ set t_Co=256
 " iterm2 color: solarized dark
 " colorscheme sahara
 " set background=dark
-
 colorscheme solarized
 if has('gui_running')
     set background=light
@@ -90,17 +84,10 @@ inoremap <Esc>D <left>
 " Enabling clipboard
 set clipboard=unnamed
 
-" if $TMUX == ''
-"     set clipboard+=unnamed
-" endif
-
 
 "------------------------------------
 " desabilita o corretor ortográfico
 set nospell
-
-" por padrão verificar a ortografia  
-" set spell
 
 " adicionando o dicionário português do Brasil e inglês
 set spelllang=pt,en 
@@ -115,9 +102,6 @@ set complete+=kspell
 
 
 "------------------------------------
-" Mostra nome do arquivo no rodape da tela
-"set title
-
 " Envia mais caracteres ao terminal, melhorando o redraw de janelas
 set ttyfast
 
@@ -197,61 +181,12 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Eckankar/vim-latex-folding'
 Bundle 'klen/python-mode'
-" Bundle 'jpalardy/vim-slime'
-" Bundle 'Lokaltog/powerline'
-" Bundle 'scrooloose/syntastic'
-" Bundle 'ervandew/supertab'
-
-
-"-----------------------------------i
-" LATEX
-"
-let g:tex_flavor='latex'
-let g:Tex_ViewRule_pdf = 'Preview' " pode ser Skim no lugar do Preview
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-
-" --------------------------------------
-" Desabilitando atalhos chatos como ã para /item e outros
-" let g:Tex_AdvancedMath = 0 "desabilitando o ~a criar mathcal ou \cite
-"let g:Tex_EnvironmentMaps=0
-"let g:Tex_EnvironmentMenus=0
-"let g:Tex_FontMaps=0
-"let g:Tex_FontMenus=0
-"let g:Tex_SectionMaps=0
-"let g:Tex_SectionMenus=0
-
-" quando reinstalar o plugin é necessário inserir novamente
-" esta linha de comando no arquivo 
-" ~/.vim/ftplugin/tex.vim
-imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine 
+Bundle 'Lokaltog/powerline'
+Bundle 'jpalardy/vim-slime'
 
 
 "------------------------------------
 " Vim-R-plugin
-"------------------------------------
-let vimrplugin_objbr_place = "console,right"
-if $DISPLAY != ""
-	let vimrplugin_openpdf = 1
-	let vimrplugin_openhtml = 1
-endif
-if has("gui_running")
-	inoremap ,<tab> <C-x><C-o>
-	inoremap .<tab> <C-x><C-a>
-else
-	inoremap <Nul> <C-x><C-o>
-	inoremap <Nul> <C-x><C-a>
-endif
-
 "------------------------------------
 " enviar código para o terminal com espaço
 vmap <Space> <Plug>RDSendSelection
@@ -259,8 +194,8 @@ nmap <Space> <Plug>RDSendLine
 
 "------------------------------------
 " para destacar códigos de .Rmd
-" let rrst_syn_hl_chunk = 1
-" let rmd_syn_hl_chunk = 1
+let rrst_syn_hl_chunk = 1
+let rmd_syn_hl_chunk = 1
 
 "------------------------------------
 " dividir a janela verticalmente quando executado \rf
@@ -275,7 +210,6 @@ let vimrplugin_show_args = 1
 " identar os argumentos de uma função qualquer 
 " partindo do '<-'
 let r_indent_ess_compatible = 0
-
 
 "------------------------------------
 " By default, Vim indents code by 8 spaces. Most people prefer 4 " spaces: 
@@ -295,23 +229,10 @@ set smarttab
 " always uses spaces instead of tab characters
 set expandtab
 
-
-"------------------------------------
-" copiar e colar
-" vmap <C-c> "*y     " Yank current selection into system clipboard
-" nmap <C-c> "*Y     " Yank current line into system clipboard (if nothing is selected)
-" nmap <C-v> "*p     " Paste from system clipboard
-
-
-" --------------------------------------
-" Substituido pelo plugin AutoClose
-"Ativa fechamento automático para parêntese
-"Set automatic expansion of parenthesis/brackets
-"inoremap  { {<CR>}<C-O>
-"inoremap [ []<LEFT>
-"inoremap ( ()<LEFT>
-"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
+" mostrar a coluna número 100, para ter uma noção de espaço 
+set colorcolumn=100
+" highlight ColorColumn ctermbg=gray
+highlight ColorColumn term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
 
 
 " --------------------------------------
@@ -435,5 +356,10 @@ let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 " para enviar um comando do vim para termianl com o Julia digitar: C-c C-c 
 " ou espaço em visual mode
-map <Space> <C-c><C-c>
+" map <Space> <C-c><C-c>
 
+
+"------------------------------
+" desabilitar o barulho chato no macvim e 
+" tb no vim, independente do terminal
+autocmd! GUIEnter * set vb t_vb=
