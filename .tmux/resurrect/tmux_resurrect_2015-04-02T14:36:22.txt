@@ -1,0 +1,23 @@
+pane	0	0	:weechat	0	:!	0	:/Users/roney	1	zsh	:
+pane	0	1	:t	0	: 	0	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	1	:t	0	: 	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	1	:t	0	: 	2	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	1	:t	0	: 	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	2	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex
+pane	0	2	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p make tese.bib
+pane	0	2	:tese	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	0	3	:R-tese	0	: 	0	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM How.To.Use.R
+pane	0	3	:R-tese	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR	1	R	:
+pane	0	4	:R-helps	0	: 	0	:/Users/roney	1	R	:/Library/Frameworks/R.framework/Resources/bin/exec/R
+pane	0	5	:comandos	0	:-	0	:/Users/roney	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	5	:comandos	0	:-	1	:/Users/roney	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM tex.snippets
+/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM .dotfiles/tex.snippets
+pane	0	6	:terminal	1	:*	0	:/Users/roney	1	zsh	:
+window	0	0	0	:!	ccfe,181x48,0,0,1
+window	0	1	0	: 	d602,181x48,0,0{90x48,0,0[90x24,0,0,2,90x23,0,25,3],90x48,91,0[90x24,91,0,4,90x23,91,25,5]}
+window	0	2	0	: 	69ea,181x48,0,0{104x48,0,0,6,76x48,105,0[76x33,105,0,7,76x14,105,34,8]}
+window	0	3	0	: 	aa3d,181x48,0,0{105x48,0,0,9,75x48,106,0,19}
+window	0	4	0	: 	66af,181x48,0,0,10
+window	0	5	0	:-	c479,181x48,0,0{90x48,0,0,11,90x48,91,0,12}
+window	0	6	1	:*	66b6,181x48,0,0,17
+state	0	0

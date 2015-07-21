@@ -1,0 +1,31 @@
+pane	0	1	:weechat	0	: 	1	:/Users/roney	1	mosh-client	:mosh-client --bind-server=any root@104.245.37.78 -p 60017 | 104.245.37.78 60017
+pane	0	2	:t	0	: 	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	2	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	2	:t	0	: 	3	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	2	:t	0	: 	4	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	3	:thesis	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM cap3.tex
+pane	0	3	:thesis	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p make tese.bib
+pane	0	3	:thesis	0	: 	3	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	4	:R-thesis	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM How.To.Use.R
+pane	0	4	:R-thesis	0	: 	2	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	0	R	:
+pane	0	5	:comands	0	: 	1	:/Users/roney	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	5	:comands	0	: 	2	:/Users/roney	1	zsh	:
+pane	0	6	:R-coase	0	:-	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p coase.citations.R script.coase.Rmd
+pane	0	6	:R-coase	0	:-	2	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	0	zsh	:
+pane	0	6	:R-coase	0	:-	3	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	0	zsh	:
+pane	0	7	:R-entrep	1	:*	1	:/Users/roney/OneDrive/Rworkspace/2015 R tese entrepreneurship	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM How.To.Use.R
+pane	0	8	:R-lattes	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM script.R.xml.R
+pane	0	8	:R-lattes	0	: 	2	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	0	R	:
+pane	0	9	:Anpec	0	: 	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM paper.tex
+pane	0	9	:Anpec	0	: 	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM make
+pane	0	9	:Anpec	0	: 	3	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+window	0	1	0	: 	66b7,181x48,0,0,56
+window	0	2	0	: 	d602,181x48,0,0{90x48,0,0[90x24,0,0,2,90x23,0,25,3],90x48,91,0[90x24,91,0,4,90x23,91,25,5]}
+window	0	3	0	: 	e65a,181x48,0,0{107x48,0,0,6,73x48,108,0[73x40,108,0,7,73x7,108,41,8]}
+window	0	4	0	: 	481d,181x48,0,0{90x48,0,0,9,90x48,91,0,57}
+window	0	5	0	: 	4478,181x48,0,0{90x48,0,0,10,90x48,91,0,51}
+window	0	6	0	:-	ee40,181x48,0,0{105x48,0,0,12,75x48,106,0[75x39,106,0,13,75x8,106,40,14]}
+window	0	7	1	:*	66b0,181x48,0,0,11
+window	0	8	0	: 	06c3,181x48,0,0[181x29,0,0,30,181x18,0,30,58]
+window	0	9	0	: 	950d,181x48,0,0{104x48,0,0,39,76x48,105,0[76x45,105,0,52,76x2,105,46,53]}
+state	0	0

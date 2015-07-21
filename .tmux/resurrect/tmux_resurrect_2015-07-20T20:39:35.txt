@@ -1,0 +1,31 @@
+pane	0	1	:weechat	0	: 	1	:/Users/roney	1	mosh-client	:mosh-client --bind-server=any root@104.245.37.78 -p 60017 | 104.245.37.78 60017
+pane	0	2	:t	0	: 	1	:/Users/roney	1	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	2	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	2	:t	0	: 	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	2	:t	0	: 	4	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	3	:thesis	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex cap5.tex cap6.tex capa.tex
+pane	0	3	:thesis	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p make tese.bib
+pane	0	3	:thesis	0	: 	3	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	4	:R-thesis	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p How.To.Use.R clean.text.R cumulative.clusters.R giant.component.R make.igraph.network.R multiplot.R my.tfidf.R nwords.R plot.cluster.size.R plot.formation.clusters.R plot.papers.for.years.R plot.topological.R plot.txc.R read.wos.R ssubgraph.R ssubgraph2.R topological.positions.R txcrescimento.R
+pane	0	5	:R-entrep	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R tese entrepreneurship	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM How.To.Use.R
+pane	0	6	:R-coase	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p coase.citations.R
+pane	0	7	:comands	0	: 	1	:/Users/roney	1	zsh	:
+pane	0	7	:comands	0	: 	2	:/Users/roney	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	8	:R-lattes	0	:-	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	0	8	:R-lattes	0	:-	2	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	0	zsh	:
+pane	0	9	:Anpec	1	:*	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM paper.tex
+pane	0	9	:Anpec	1	:*	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+pane	0	9	:Anpec	1	:*	3	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+pane	1	1	:Vim	1	:*	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM paper-en.tex
+pane	1	1	:Vim	1	:*	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+window	0	1	0	: 	ccfe,181x48,0,0,1
+window	0	2	0	: 	d602,181x48,0,0{90x48,0,0[90x24,0,0,2,90x23,0,25,3],90x48,91,0[90x24,91,0,4,90x23,91,25,5]}
+window	0	3	0	: 	9a4f,181x48,0,0{104x48,0,0,6,76x48,105,0[76x44,105,0,7,76x3,105,45,8]}
+window	0	4	0	: 	cd06,181x48,0,0,9
+window	0	5	0	: 	66b5,181x48,0,0,16
+window	0	6	0	: 	66b2,181x48,0,0,13
+window	0	7	0	: 	c479,181x48,0,0{90x48,0,0,11,90x48,91,0,12}
+window	0	8	0	:-	06c8,181x48,0,0[181x29,0,0,17,181x18,0,30,18]
+window	0	9	1	:*	f4fa,181x48,0,0{104x48,0,0,19,76x48,105,0[76x45,105,0,20,76x2,105,46,21]}
+window	1	1	1	:*	5b9e,102x44,0,0[102x41,0,0,27,102x2,0,42,28]
+state	0	0

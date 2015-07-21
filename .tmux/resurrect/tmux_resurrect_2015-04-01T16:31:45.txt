@@ -1,0 +1,20 @@
+pane	0	0	:ssh	0	: 	0	:/Users/roney	1	ssh	:ssh -D 5555 root@104.245.37.78
+pane	0	1	:t	0	: 	0	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	1	:t	0	: 	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	1	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	1	:t	0	: 	3	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	2	:tese	0	:!	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex
+pane	0	2	:tese	0	:!	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p make tese.bib
+pane	0	2	:tese	0	:!	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	3	:terminal	0	: 	0	:/Users/roney	1	zsh	:
+pane	0	4	:R-helps	0	:-	0	:/Users/roney	1	zsh	:
+pane	0	5	:comandos	1	:*	0	:/Users/roney	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	5	:comandos	1	:*	1	:/Users/roney/.dotfiles	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM tex.snippets
+/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM tex.snippets
+window	0	0	0	: 	b8fe,181x62,0,0,1
+window	0	1	0	: 	d3e1,181x62,0,0{90x62,0,0[90x31,0,0,2,90x30,0,32,3],90x62,91,0[90x31,91,0,4,90x30,91,32,5]}
+window	0	2	0	:!	9807,181x62,0,0{104x62,0,0,6,76x62,105,0[76x40,105,0,7,76x21,105,41,8]}
+window	0	3	0	: 	b906,181x62,0,0,9
+window	0	4	0	:-	5caf,181x62,0,0,10
+window	0	5	1	:*	adf4,181x62,0,0{90x62,0,0,11,90x62,91,0,12}
+state	0	0

@@ -1,0 +1,22 @@
+pane	0	0	:weechat	0	:-	0	:/Users/roney	1	mosh-client	:mosh-client --bind-server=any root@104.245.37.78 -p 60007 | 104.245.37.78 60007
+pane	0	1	:t	1	:*	0	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	1	:t	1	:*	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	1	:t	1	:*	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	1	:t	1	:*	3	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	2	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex cap5.tex cap6.tex
+pane	0	2	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p make tese.bib
+pane	0	2	:tese	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	3	:R-tese	0	: 	0	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM How.To.Use.R
+pane	0	3	:R-tese	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	0	R	:
+pane	0	4	:R-help	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD/figuras	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM tab-analise-level3-cap3.tex
+pane	0	5	:comandos	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD/figuras	1	zsh	:
+pane	0	6	:terminal	0	: 	0	:/Users/roney	0	zsh	:
+pane	0	6	:terminal	0	: 	1	:/Users/roney	1	zsh	:
+window	0	0	0	:-	66b8,181x48,0,0,19
+window	0	1	1	:*	0cfa,181x48,0,0{86x48,0,0[86x24,0,0,2,86x23,0,25,3],94x48,87,0[94x24,87,0,4,94x23,87,25,5]}
+window	0	2	0	: 	8aaa,181x48,0,0{104x48,0,0,6,76x48,105,0[76x35,105,0,7,76x12,105,36,8]}
+window	0	3	0	: 	fe01,181x48,0,0[181x19,0,0,11,181x28,0,20,18]
+window	0	4	0	: 	66af,181x48,0,0,10
+window	0	5	0	: 	66b2,181x48,0,0,13
+window	0	6	0	: 	705b,181x48,0,0{104x48,0,0,14,76x48,105,0,15}
+state	0	0

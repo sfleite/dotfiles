@@ -5,12 +5,12 @@ if(interactive()){
        library(vimcom)
    }
 
-options(repos=c(
-                "http://cran.dcc.fc.up.pt/",
-                "http://brieger.esalq.usp.br/CRAN/",
-                "http://cran-r.c3sl.ufpr.br/"
-                )
-        )
+# options(repos=c(
+#                 "http://cran.dcc.fc.up.pt/",
+#                 "http://brieger.esalq.usp.br/CRAN/",
+#                 "http://cran-r.c3sl.ufpr.br/"
+#                 )
+# )
 
 # Use the text based web browser w3m to navigate through R docs
        # in Linux Console after help.start():

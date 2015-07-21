@@ -34,6 +34,7 @@ colorscheme solarized
 if has('gui_running')
     set background=light
 else
+    " set background=light
     set background=dark
 endif
 
@@ -87,7 +88,7 @@ set clipboard=unnamed
 
 "------------------------------------
 " desabilita o corretor ortográfico
-set nospell
+" set nospell
 
 " adicionando o dicionário português do Brasil e inglês
 set spelllang=pt,en 
@@ -171,7 +172,6 @@ Bundle 'vim-scripts/Vim-R-plugin'
 Bundle 'kien/ctrlp.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
-Bundle 'vim-scripts/VOoM'
 Bundle 'kshenoy/vim-signature'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'JuliaLang/julia-vim'
@@ -212,6 +212,24 @@ let vimrplugin_show_args = 1
 let r_indent_ess_compatible = 0
 
 "------------------------------------
+" eliminar associação de _ com <-
+" let vimrplugin_assign = 0
+" let vimrplugin_assign_map = <!>
+
+"------------------------------------
+" R documentation in a Vim's buffer
+let vimrplugin_vimpager = "tabnew"
+
+"------------------------------------
+" não renomear o título do pane do tmux com VimR
+let vimrplugin_tmux_title = "automatic"
+
+"------------------------------------
+" show hidden objects in the list of objects for omni completion
+let g:vimrplugin_allnames = 1
+
+
+"------------------------------------
 " By default, Vim indents code by 8 spaces. Most people prefer 4 " spaces: 
 " size of a hard tabstop
 set tabstop=4
@@ -246,6 +264,7 @@ highlight ColorColumn term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE gu
 "autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
+let g:nerdtree_tabs_open_on_gui_startup=0
 
 "------------------------------
 " NerdTreeTabs
@@ -253,7 +272,7 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " ------------------------------
 " Highlight things that we find with the search
-set hlsearch
+" set hlsearch
 
 
 " ------------------------------
@@ -276,13 +295,13 @@ map <leader>xx <C-_><C-_>
 "------------------------------
 " autocompletar
 " completa busca o nome da função no R ou LaTeX
-imap ,<tab> <C-x><C-o>
+" imap ,<tab> <C-x><C-o>
 " completa arguemntos de uma função 
-imap .<tab> <C-x><C-a>
+" imap .<tab> <C-x><C-a>
 " completa palavras buscando nos dicionários, tanto inglês como português
-imap ,.<tab> <C-x><C-k>
+" imap ,.<tab> <C-x><C-k>
 " completa linhas inteiras com base nas linhas que já existem no arquivo
-imap .,<tab> <C-x><C-l>
+" imap .,<tab> <C-x><C-l>
 
 
 "------------------------------
@@ -363,3 +382,5 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 " desabilitar o barulho chato no macvim e 
 " tb no vim, independente do terminal
 autocmd! GUIEnter * set vb t_vb=
+
+
