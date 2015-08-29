@@ -23,13 +23,12 @@ snippet for
 	for(${1:i} in ${2:range}){
 	    ${3:}
 	}${4:}
-## Functio
-#snippet function
-#	${1:funname} <- function(${2:})
-#	{
-#	    ${3:}
-#	}${4:}
-# repeat
+## Function
+snippet function
+	${1:funname} <- function(${2:})
+	{
+	    ${3:}
+	}${4:}
 snippet repeat
 	repeat{
 	    ${1:}
@@ -153,30 +152,6 @@ snippet img
 	${6:plot}
 	dev.off()${7:}
 
-# statistical test functions
-snippet fisher
-	fisher.test(${1:x}, ${2:y})
-	${3:}
-snippet chisq
-	chisq.test(${1:x}, ${2:y})
-	${3:}
-snippet tt
-	t.test(${1:x}, ${2:y})
-	${3:}
-snippet wilcox
-	wilcox.test(${1:x}, ${2:y})
-	${3:}
-snippet cor
-	cor.test(${1:x}, ${2:y})
-	${3:}
-snippet var
-	var.test(${1:x}, ${2:y})
-	${3:}
-snippet kv
-	kv.test(${1:x}, ${2:y})
-	${3:}
-
-
 
 #------------------------------
 # criado por Roney
@@ -184,29 +159,29 @@ snippet kv
 # read
 snippet read
 	read.${1:csv}(
-		'${2:file}',
-		header = ${3:TRUE/FALSE},
-		sep = '${4:,}',
-		dec = '${5:.}',
-		row.names = ${6:TRUE/FALSE}
-		)${7:}
+				'${2:file}',
+				header = ${3:TRUE/FALSE},
+				sep = '${4:,}',
+				dec = '${5:.}',
+				row.names = ${6:TRUE/FALSE}
+				)${7:}
 # write
 snippet write
 	write.${1:csv}(
-		${2:x},
-		file = '${3:}',
-		sep = '${4:,}',
-		row.names = ${5:TRUE/FALSE},
-		col.names = ${6:TRUE/FALSE},
-		na = '${7:NA}'
-		)${8:}
+				${2:x},
+				file = '${3:}',
+				sep = '${4:,}',
+				row.names = ${5:TRUE/FALSE},
+				col.names = ${6:TRUE/FALSE},
+				na = '${7:NA}'
+				)${8:}
 # subset
 snippet subset
 	subset(
-		${1:data},
-		${2:subset},
-		${3:select},
-	      )${4:}
+			${1:data},
+			${2:subset},
+			${3:select},
+		      )${4:}
 # qplot
 snippet	qqplot
 	qplot(${1:x}, ${2:y}, data = ${3:})

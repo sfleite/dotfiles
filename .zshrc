@@ -86,7 +86,8 @@ export LC_ALL="en_US.UTF-8"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM'
+# alias vim='/usr/local/Cellar/macvim/7.4-77/bin/mvim -v --ervername VIM'
+alias vim='vim --servername VIM'
 alias py='/usr/local/bin/python'    # py: python instalado do brew
 alias julia='/Applications/Julia-0.3.6.app/Contents/Resources/julia/bin/julia'
 alias ju=julia
@@ -102,3 +103,4 @@ alias t2='trans pt:en -I'	# translate
 alias t3='trans en:pt -I -b'	# translate 
 alias t4='trans en:pt -I'	# translate 
 alias c='g++' # compilador g++ (c++)
+alias comandos='vim ~/OneDrive/Profissional/Unix/comandos.txt'

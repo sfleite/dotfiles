@@ -22,134 +22,241 @@ snippet title
 	---
 	${9:}
 
-
-# Links and their kin
-# -------------------
-#
-# (These don't play very well with delimitMate)
-#
-
-snippet [
-	[${1:link}](http://${2:url} "${3:title}")${4}
-
-snippet [*
-	[${1:link}](${2:`@*`} "${3:title}")${4}
-
-snippet [:
-	[${1:id}]: http://${2:url} "${3:title}"
-
-snippet [:*
-	[${1:id}]: ${2:`@*`} "${3:title}"
-
-snippet [@
-	[${1:link}](mailto:${2:email})${3}
-
-snippet [@*
-	[${1:link}](mailto:${2:`@*`})${3}
-
-snippet [:@
-	[${1:id}]: mailto:${2:email} "${3:title}"
-
-snippet [:@*
-	[${1:id}]: mailto:${2:`@*`} "${3:title}"
-
-snippet ![
-	![${1:alt}](${2:url} "${3:title}")${4}
-
-snippet ![*
-	![${1:alt}](${2:`@*`} "${3:title}")${4}
-
-snippet ![:
-	![${1:id}]: ${2:url} "${3:title}"
-
-snippet ![:*
-	![${1:id}]: ${2:`@*`} "${3:title}"
-
-snippet [^:
-	[^${1:id}]: ${2:note}
-
-snippet [^:*
-	[^${1:id}]: ${2:`@*`}
-
-#------------------------------
-#
-snippet cmdarg
-	args <- commandArgs(TRUE)
-	if (length(args) == 0)
-	    stop("Please give ${1:}!")
-	if (!all(file.exists(args)))
-	     stop("Couln't find input files!") 
-
-snippet getopt
-	require('getopt', quietly = TRUE)
-	opt_spec <- matrix(c(
-					'help',     'h', 0, "logical", 	"Getting help",
-					'file',     'f', 1, "character","File to process" 
-	                ), ncol = 5, byrow = TRUE)
-	opt <- getopt(spec = opt_spec)
-	if ( !is.null(opt$help) || is.null(commandArgs()) )   {    
-	    cat(getopt(spec = opt_spec, usage = TRUE, command = "yourCmd"))
-	    q(status=0)
-	}
-	# some inital value
-	if ( is.null(opt$???) )    { opt$??? <- ??? }
-
-snippet optparse
-	require("optparse", quietly = TRUE)
-	option_list <- 
-	    list(make_option(c("-n", "--add_numbers"), action="store_true", default=FALSE,
-	                     help="Print line number at the beginning of each line [default]")
-	         )
-	parser <- OptionParser(usage = "%prog [options] file", option_list=option_list)
-	arguments <- parse_args(parser, positional_arguments = TRUE)
-	opt <- arguments$options
-	
-	if(length(arguments$args) != 1) {
-	    cat("Incorrect number of required positional arguments\n\n")
-	    print_help(parser)
-	    stop()
-	} else {
-	    file <- arguments$args
-	}
-	
-	if( file.access(file) == -1) {
-	    stop(sprintf("Specified file ( %s ) does not exist", file))
-	} else {
-	    file_text <- readLines(file)
-	}
-
-snippet #!
-	#!/usr/bin/env Rscript
-
-snippet debug
-	# Development & Debugging, don't forget to uncomment afterwards!
-	#--------------------------------------------------------------------------------
-	#setwd("~/Projekte/${1:}")
-	#opt <- list(${2:}
-	#            )
-	#--------------------------------------------------------------------------------
-
-
-snippet r
-	\`\`\`{r ${1:chung_tag}, echo = ${2:TRUE}, warning = ${3:FALSE}, include = ${4:TRUE}}
-	${5:}
-	\`\`\`
-
-snippet ri
-	\`{r ${1:}}\`
-
+# Insert Markdown comment
+snippet !!
+	<!-- ${1:Comment here!} -->
+# options of rmarkdown
 snippet copt
 	\`\`\`{r setup, echo = FALSE}
 		opts_chunk$set(
 				fig.path='../figures/${1:}', 
-				cache.path='../cache/-',
+				cache.path='../cache/',
 				fig.align='center', 
 				fig.show='hold', 
 				par=TRUE
 				)	
 		#opts_knit$set(upload.fun = imgur_upload) # upload images
 	\`\`\`
-
-# ===================================================================
-
-
+# regular chunk
+snippet r
+	\`\`\`{r ${1:chung_tag}, echo = ${2:TRUE}, warning = ${3:FALSE}, include = ${4:TRUE}}
+	${5:}
+	\`\`\`
+# r outpub in line
+snippet ri
+	\`{r ${1:}}\`
+#------------------------------
+# Markdown
+snippet [
+	[${1:link}](http://${2:url} "${3:title}")${4}
+snippet [*
+	[${1:link}](${2:`@*`} "${3:title}")${4}
+snippet [:
+	[${1:id}]: http://${2:url} "${3:title}"
+snippet [:*
+	[${1:id}]: ${2:`@*`} "${3:title}"
+snippet [@
+	[${1:link}](mailto:${2:email})${3}
+snippet [@*
+	[${1:link}](mailto:${2:`@*`})${3}
+snippet [:@
+	[${1:id}]: mailto:${2:email} "${3:title}"
+snippet [:@*
+	[${1:id}]: mailto:${2:`@*`} "${3:title}"
+snippet ![
+	![${1:alt}](${2:url} "${3:title}")${4}
+snippet ![*
+	![${1:alt}](${2:`@*`} "${3:title}")${4}
+snippet ![:
+	![${1:id}]: ${2:url} "${3:title}"
+snippet ![:*
+	![${1:id}]: ${2:`@*`} "${3:title}"
+snippet [^:
+	[^${1:id}]: ${2:note}
+snippet [^:*
+	[^${1:id}]: ${2:`@*`}
+#------------------------------------------------------------
+# Available in Vim-R-Plugin documentation
+# from here equal the file: r.snippets
+# library()
+snippet library
+	library(${1:})
+	${2:}
+# If Condition
+snippet if
+	if(${1:condition}){
+	    ${2:}
+	}${3:}
+snippet else
+	else {
+	    ${1:}
+	}${2:}
+snippet while
+	while(${1:condition}){
+	    ${2:}
+	}${3:}
+# For Loop
+snippet for
+	for(${1:i} in ${2:range}){
+	    ${3:}
+	}${4:}
+## Function
+snippet function
+	${1:funname} <- function(${2:})
+	{
+	    ${3:}
+	}${4:}
+snippet repeat
+	repeat{
+	    ${1:}
+	    if(${2:condition}) break
+	}${3:}
+#------------------------------
+# adapted from
+# https://github.com/timmywil/snipmate-snippets/blob/master/snippets/r.snippets
+# require
+snippet require
+	require(${1:package})
+	${2:}
+# source 
+snippet source
+	source('${1:file}')
+	${2:}
+# functions
+snippet function
+	${1:name} <- function (${2:variables}) {
+		${3}
+	}${4:}
+snippet return
+	return(${1})
+	${2:}
+# dataframes, lists, etc
+snippet df
+	${1:name}[${2:rows}, ${3:cols}]
+	${4:}
+snippet c
+	c(${1:items})
+	${2:}
+snippet list
+	list(${1:items})
+	${2:}
+snippet matrix
+	matrix(${1:data}, nrow=${2:rows}, ncol=${3:cols})
+	${4:}
+# apply functions
+snippet apply
+	apply(${1:array}, ${2:margin}, ${3:function})
+	${4:}
+snippet lapply
+	lapply(${1:list}, ${2:function})
+	${3:}
+snippet sapply
+	lapply(${1:list}, ${2:function})
+	${3:}
+snippet vapply
+	vapply(${1:list}, ${2:function}, ${3:type})
+	${4:}
+snippet mapply
+	mapply(${1:function}, ${2:...})
+	${3:}
+snippet tapply
+	tapply(${1:vector}, ${2:index}, ${3:function})
+	${4:}
+snippet rapply
+	rapply(${1:list}, ${2:function})
+	${3:}
+# plyr functions
+snippet dd
+	ddply(${1:frame}, ${2:variables}, ${3:function})
+	${4:}
+snippet dl
+	dlply(${1:frame}, ${2:variables}, ${3:function})
+	${4:}
+snippet da
+	daply(${1:frame}, ${2:variables}, ${3:function})
+	${4:}
+snippet d_
+	d_ply(${1:frame}, ${2:variables}, ${3:function})
+	${4:}
+snippet ad
+	adply(${1:array}, ${2:margin}, ${3:function})
+	${4:}
+snippet al
+	alply(${1:array}, ${2:margin}, ${3:function})
+	${4:}
+snippet aa
+	aaply(${1:array}, ${2:margin}, ${3:function})
+	${4:}
+snippet a_
+	a_ply(${1:array}, ${2:margin}, ${3:function})
+	${4:}
+snippet ld
+	ldply(${1:list}, ${2:function})
+	${3:}
+snippet ll
+	llply(${1:list}, ${2:function})
+	${3:}
+snippet la
+	laply(${1:list}, ${2:function})
+	${3:}
+snippet l_
+	l_ply(${1:list}, ${2:function})
+	${3:}
+snippet	md
+	mdply(${1:matrix}, ${2:function})
+	${3:}
+snippet	ml
+	mlply(${1:matrix}, ${2:function})
+	${3:}
+snippet	ma
+	maply(${1:matrix}, ${2:function})
+	${3:}
+snippet	m_
+	m_ply(${1:matrix}, ${2:function})
+	${3:}
+# plot functions
+snippet plot
+	plot(${1:x}, ${2:y})
+	${3:}
+snippet ggplot
+	ggplot(${1:data}, aes(${2:aesthetics}))${3:}
+snippet img
+	${1:(jpeg,bmp,png,tiff)}(filename="${2:filename}", width=${3}, height=${4}, unit="${5}")
+	${6:plot}
+	dev.off()${7:}
+#------------------------------
+# by Roney
+# read
+snippet read
+	read.${1:csv}(
+				'${2:file}',
+				header = ${3:TRUE/FALSE},
+				sep = '${4:,}',
+				dec = '${5:.}',
+				row.names = ${6:TRUE/FALSE}
+				)${7:}
+# write
+snippet write
+	write.${1:csv}(
+				${2:x},
+				file = '${3:}',
+				sep = '${4:,}',
+				row.names = ${5:TRUE/FALSE},
+				col.names = ${6:TRUE/FALSE},
+				na = '${7:NA}'
+				)${8:}
+# subset
+snippet subset
+	subset(
+			${1:data},
+			${2:subset},
+			${3:select},
+		      )${4:}
+# qplot
+snippet	qqplot
+	qplot(${1:x}, ${2:y}, data = ${3:})
+	${4:}
+# install.packages
+snippet install
+	install.packages(c('${1:package.name}')) 
+	${2}

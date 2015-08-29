@@ -1,6 +1,5 @@
-
-
 " --------------------------------------
+"  General
 filetype on
 syntax enable
 syntax on
@@ -10,8 +9,12 @@ set modifiable
 set nocompatible
 set encoding=utf-8
 
+"  sem quebra de linha por padrão
+set nowrap
 
-" --------------------------------------
+" destacar coluna e linha onde esta o curso 
+set cuc cul 
+
 "mostra o modo em que estamos
 set showmode 
 
@@ -109,6 +112,9 @@ set ttyfast
 " mostrar o número de linhas 
 set nu! 
 
+" relative number in lines
+set relativenumber
+
 " quebrar linha respeitando as palavras
 set linebreak 
 
@@ -179,10 +185,19 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Eckankar/vim-latex-folding'
-Bundle 'klen/python-mode'
 Bundle 'Lokaltog/powerline'
 Bundle 'jpalardy/vim-slime'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'tmhedberg/matchit'
+Bundle 'mattn/emmet-vim'
+Bundle 'othree/html5.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'git://github.com/csscomb/vim-csscomb.git'
+Bundle 'pangloss/vim-javascript'
+Bundle 'hallettj/jslint.vim'
+" Bundle 'maksimr/vim-jsbeautify'
+Bundle 'wikitopian/hardmode'
 
 
 "------------------------------------
@@ -228,6 +243,10 @@ let vimrplugin_tmux_title = "automatic"
 " show hidden objects in the list of objects for omni completion
 let g:vimrplugin_allnames = 1
 
+"------------------------------------
+" forcar o R a carregar esses pacotes ao iniciar, para ajudar no ominicompletation
+let vimrplugin_start_libs = "base,stats,graphics,grDevices,utils,methods"
+
 
 "------------------------------------
 " By default, Vim indents code by 8 spaces. Most people prefer 4 " spaces: 
@@ -255,6 +274,7 @@ highlight ColorColumn term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE gu
 
 " --------------------------------------
 " Markdown
+" \md to open Marked
 :nnoremap <leader>md :silent !open -a Marked.app '%:p'<cr>
 
 
@@ -293,18 +313,6 @@ map <leader>xx <C-_><C-_>
 
 
 "------------------------------
-" autocompletar
-" completa busca o nome da função no R ou LaTeX
-" imap ,<tab> <C-x><C-o>
-" completa arguemntos de uma função 
-" imap .<tab> <C-x><C-a>
-" completa palavras buscando nos dicionários, tanto inglês como português
-" imap ,.<tab> <C-x><C-k>
-" completa linhas inteiras com base nas linhas que já existem no arquivo
-" imap .,<tab> <C-x><C-l>
-
-
-"------------------------------
 " Maps to resizing a window split
 nnoremap <silent> <Leader>, :vertical resize +4<cr>
 nnoremap <silent> <Leader>. :vertical resize -4<cr>
@@ -330,9 +338,9 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 "------------------------------
 " snipMate
 " arquivos Rnw usando snippets de r tex e rnoweb
-au BufRead,BufNewFile *.rnw set ft=rnoweb.r.tex
+" au BufRead,BufNewFile *.rnw set ft=rnoweb.r.tex
 " arquivos  Rmd usando snippets de r e rmd
-au BufRead,BufNewFile *.rmd set ft=rmd.r
+" au BufRead,BufNewFile *.rmd set ft=rmd.r
 
 
 "------------------------------
@@ -383,4 +391,76 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 " tb no vim, independente do terminal
 autocmd! GUIEnter * set vb t_vb=
 
+
+"------------------------------
+" Vim Gist
+let g:gist_clip_command = 'pbcopy'
+let g:gist_post_private = 1
+" let g:gist_post_anonymous = 1
+let g:gist_open_browser_after_post = 1
+
+
+"------------------------------
+" HTML
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+
+"------------------------------
+" LaTeX-Box-Team/LaTeX-Box
+let g:LatexBox_split_type="new"
+let g:tex_flavor = "latex"      " para todo arquivo .tex ser latex
+let g:LatexBox_Folding=1        " folding ver foldmethod=expr
+let g:LatexBox_fold_toc=1
+
+
+"------------------------------
+" Vim Hard Mode
+" desables hjkl, arrow keys and page up/down
+" \h para mudar o modo de uso
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call EasyMode()
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+
+"------------------------------
+" Disable arrow keys
+" visual mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+" insert mode
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+
+
+"------------------------------
+" Show invisible characters
+" set list | set nolist
+" set listchars=trail:·,precedes:«,extends:»,eol:¬,tab:▸\ 
+set nolist
+set listchars=trail:·,precedes:«,extends:»,eol:¬,tab:\|\ 
+hi NonText ctermfg=darkgrey guifg=darkgrey 
+hi clear SpecialKey 
+hi link SpecialKey NonText 
+
+
+"------------------------------
+" fold method
+set foldmethod=syntax
+set foldlevelstart=1
+
+let javaScript_fold=1         " JavaScript
+let perl_fold=1               " Perl
+let php_folding=1             " PHP
+let r_syntax_folding=1        " R
+let ruby_fold=1               " Ruby
+let sh_fold_enabled=1         " sh
+let vimsyn_folding='af'       " Vim script
+let xml_syntax_folding=1      " XML
+
+" if latex use expr method
+autocmd FileType tex setlocal foldmethod=expr
 

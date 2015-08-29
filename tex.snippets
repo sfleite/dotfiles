@@ -30,8 +30,6 @@ snippet lof
 	\listoffigures
 snippet lot
 	\listoftables
-
-
 #------------------------------
 # \begin{}...\end{}
 snippet begin
@@ -152,7 +150,6 @@ snippet seção
 	${1:Seção}~\ref{${2:sec:}}${3}
 snippet página
 	${1:página}~\pageref{${2}}${3}
-
 #------------------------------
 # Itálico
 snippet it
@@ -166,6 +163,12 @@ snippet color
 # cite
 snippet cite
 	\cite{${1}} ${2}
+# citep
+snippet citep
+	\citep{${1}} ${2}
+# citet
+snippet citet
+	\citet{${1}} ${2}
 # cite online
 snippet citeo
 	\citeonline{${1}} ${2}
@@ -195,3 +198,11 @@ snippet ref
 # footnote
 snippet footnote
 	\footnote{${1}} ${2}
+# fold
+snippet	fold
+	{{{${1}
+	}}}
+snippet	foldb
+	{{{${1}
+snippet	folde
+	}}}${1}
