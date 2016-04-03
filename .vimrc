@@ -185,7 +185,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/powerline'
+" Bundle 'Lokaltog/powerline'
 Bundle 'jpalardy/vim-slime'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
@@ -198,6 +198,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'hallettj/jslint.vim'
 " Bundle 'maksimr/vim-jsbeautify'
 Bundle 'wikitopian/hardmode'
+Bundle 'itchyny/lightline.vim'
 
 
 "------------------------------------
@@ -267,9 +268,9 @@ set smarttab
 set expandtab
 
 " mostrar a coluna número 100, para ter uma noção de espaço 
-set colorcolumn=100
+" set colorcolumn=100
 " highlight ColorColumn ctermbg=gray
-highlight ColorColumn term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
+" highlight ColorColumn term=NONE cterm=NONE ctermfg=222  ctermbg=64   gui=NONE guifg=#ffd787 guibg=#5f8700
 
 
 " --------------------------------------
@@ -331,9 +332,67 @@ set laststatus=2
 
 
 "------------------------------
-" configuração da powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'default',
+      \ 'mode_map': { 'c': 'NORMAL' },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \ },
+      \ 'component_function': {
+      \   'modified': 'LightLineModified',
+      \   'readonly': 'LightLineReadonly',
+      \   'fugitive': 'LightLineFugitive',
+      \   'filename': 'LightLineFilename',
+      \   'fileformat': 'LightLineFileformat',
+      \   'filetype': 'LightLineFiletype',
+      \   'fileencoding': 'LightLineFileencoding',
+      \   'mode': 'LightLineMode',
+      \ },
+      \ 'separator': { 'left': '⮀', 'right': '⮂' },
+      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ }
 
+function! LightLineModified()
+  return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+endfunction
+
+function! LightLineReadonly()
+  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? '⭤' : ''
+endfunction
+
+function! LightLineFilename()
+  return ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() : 
+        \  &ft == 'unite' ? unite#get_status_string() : 
+        \  &ft == 'vimshell' ? vimshell#get_status_string() :
+        \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
+        \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
+endfunction
+
+function! LightLineFugitive()
+  if &ft !~? 'vimfiler\|gundo' && exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? '⭠ '._ : ''
+  endif
+  return ''
+endfunction
+
+function! LightLineFileformat()
+  return winwidth(0) > 70 ? &fileformat : ''
+endfunction
+
+function! LightLineFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
+endfunction
+
+function! LightLineFileencoding()
+  return winwidth(0) > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! LightLineMode()
+  return winwidth(0) > 60 ? lightline#mode() : ''
+endfunction
 
 "------------------------------
 " snipMate
@@ -409,8 +468,8 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " LaTeX-Box-Team/LaTeX-Box
 let g:LatexBox_split_type="new"
 let g:tex_flavor = "latex"      " para todo arquivo .tex ser latex
-let g:LatexBox_Folding=1        " folding ver foldmethod=expr
-let g:LatexBox_fold_toc=1
+" let g:LatexBox_Folding=1        " folding ver foldmethod=expr
+" let g:LatexBox_fold_toc=1
 
 
 "------------------------------
@@ -449,18 +508,20 @@ hi link SpecialKey NonText
 
 "------------------------------
 " fold method
-set foldmethod=syntax
-set foldlevelstart=1
-
-let javaScript_fold=1         " JavaScript
-let perl_fold=1               " Perl
-let php_folding=1             " PHP
-let r_syntax_folding=1        " R
-let ruby_fold=1               " Ruby
-let sh_fold_enabled=1         " sh
-let vimsyn_folding='af'       " Vim script
-let xml_syntax_folding=1      " XML
+" set foldmethod=syntax
+"
+" let javaScript_fold=1         " JavaScript
+" let perl_fold=1               " Perl
+" let php_folding=1             " PHP
+" let r_syntax_folding=1        " R
+" let ruby_fold=1               " Ruby
+" let sh_fold_enabled=1         " sh
+" let vimsyn_folding='af'       " Vim script
+" let xml_syntax_folding=1      " XML
 
 " if latex use expr method
-autocmd FileType tex setlocal foldmethod=expr
+" autocmd FileType tex setlocal foldmethod=expr
+
+" column scroll-binding on <leader>sb
+"  noremap <silent> <leader>sb :<c-u>let @z=&so<cr>:set so=0 noscb<cr>:bo vs<cr>ljzt:setl scb<cr><c-w>p:setl scb<cr>:let &so=@z<cr>
 

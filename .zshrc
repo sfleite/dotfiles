@@ -46,15 +46,24 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history python pip brew brew-cask osx tmuxinator tmux web-search vundle r)
+plugins=(git history python pip brew brew-cask osx tmuxinator tmux web-search vundle r git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin/:/usr/X11/bin:/Library/TeX/texbin/"
 # export PATH=~/anaconda/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# local bin
+export PATH="~/.local/bin:$PATH"
+
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+# postgres
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+# mysql
+export PATH=$PATH:/usr/local/mysql/bin
 
 # You may need to manually set your language environment
 # necessário colocar tudo isso para o mosh funcionar
@@ -103,4 +112,6 @@ alias t2='trans pt:en -I'	# translate
 alias t3='trans en:pt -I -b'	# translate 
 alias t4='trans en:pt -I'	# translate 
 alias c='g++' # compilador g++ (c++)
-alias comandos='vim ~/OneDrive/Profissional/Unix/comandos.txt'
+alias comandos='vim ~/Google\ Drive/Profissional/Unix/comandos.txt'
+alias gf='git flow'
+alias cnpq='~/.ssh/cnpq.pem.txt'

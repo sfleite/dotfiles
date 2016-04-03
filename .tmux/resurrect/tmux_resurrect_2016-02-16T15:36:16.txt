@@ -1,0 +1,17 @@
+pane	0	0	:ssh	0	:	0	:/Users/roney	1	ssh	:ssh -D 5555 root@104.245.37.78
+pane	0	1	:R::lattes	0	:	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	0	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM xml2sql.R
+pane	0	1	:R::lattes	0	:	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	R	:
+pane	0	2	:R::lucas	0	:-	0	:/Users/roney/OneDrive/Rworkspace/2016 R Lucas tese	1	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM luqueta.keywords.R
+pane	0	3	:R::bicudo	1	:*	0	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	0	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM bicudo.Rmd
+pane	0	3	:R::bicudo	1	:*	1	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	1	R	:
+pane	0	3	:R::bicudo	1	:*	2	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	0	zsh	:
+pane	0	4	:R::Coase	0	:	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	0	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM script.coase.Rmd
+pane	0	4	:R::Coase	0	:	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	1	R	:
+pane	0	5	:R::luqueta	0	:	0	:/Users/roney/OneDrive/Rworkspace/2016 R Lucas tese	1	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM luqueta.keywords.R
+window	0	0	0	:	c15e,272x64,0,0,1
+window	0	1	0	:	be65,272x64,0,0{136x64,0,0,5,135x64,137,0,13}
+window	0	2	0	:-	c165,272x64,0,0,8
+window	0	3	1	:*	ac9e,272x64,0,0{118x64,0,0,14,153x64,119,0[153x61,119,0,22,153x2,119,62,18]}
+window	0	4	0	:	34f1,272x64,0,0{123x64,0,0,16,148x64,124,0,23}
+window	0	5	0	:	e0e3,272x64,0,0,24
+state	0	

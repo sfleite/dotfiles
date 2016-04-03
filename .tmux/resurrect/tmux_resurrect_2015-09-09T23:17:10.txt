@@ -1,0 +1,24 @@
+pane	current	0	:Ubuntu	0	: 	0	:/Users/roney	1	mosh-client	:mosh-client root@104.245.37.78 | 104.245.37.78 60002
+pane	current	1	:Arch	0	: 	0	:/Users/roney	1	ssh	:ssh -D 5555 roney@200.17.60.42
+pane	current	2	:Amazon	0	: 	0	:/Users/roney	1	ssh	:ssh -i /Users/roney/.ssh/cnpq.pem.txt ubuntu@52.88.240.184
+pane	current	3	:t	0	: 	0	:/Users/roney	1	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	3	:t	0	: 	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	3	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	3	:t	0	: 	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	current	4	:tese	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	5	:respol	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	6	:R::respol	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	7	:R::paulinho	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	8	:R::lattes	0	:-	0	:/Users/roney	1	zsh	:
+pane	current	9	:terminal	1	:*	0	:/Users/roney	1	zsh	:
+window	current	0	0	: 	ccfd,181x48,0,0,0
+window	current	1	0	: 	ccfe,181x48,0,0,1
+window	current	2	0	: 	ccff,181x48,0,0,2
+window	current	3	0	: 	7301,181x48,0,0[181x24,0,0{90x24,0,0,3,90x24,91,0,6},181x23,0,25{90x23,0,25,4,90x23,91,25,5}]
+window	current	4	0	: 	cd04,181x48,0,0,7
+window	current	5	0	: 	cd05,181x48,0,0,8
+window	current	6	0	: 	cd06,181x48,0,0,9
+window	current	7	0	: 	66af,181x48,0,0,10
+window	current	8	0	:-	66b0,181x48,0,0,11
+window	current	9	1	:*	66b1,181x48,0,0,12
+state	current	

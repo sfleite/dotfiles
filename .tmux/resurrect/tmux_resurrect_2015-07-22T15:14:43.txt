@@ -1,0 +1,28 @@
+pane	0	1	:weechat	0	: 	1	:/Users/roney	1	mosh-client	:mosh-client --bind-server=any root@104.245.37.78 -p 60017 | 104.245.37.78 60017
+pane	0	2	:t	0	:-	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	2	:t	0	:-	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	2	:t	0	:-	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	2	:t	0	:-	4	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	3	:thesis	1	:*	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM cap4.tex
+pane	0	3	:thesis	1	:*	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM -p tese.bib make pacote.tex
+pane	0	3	:thesis	1	:*	3	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	0	4	:R-thesis	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Roney, Aurora, Rosangela, Ze - ICABR2	1	zsh	:
+pane	0	5	:R-entrep	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R tese entrepreneurship	1	zsh	:
+pane	0	6	:R-coase	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lucas, Tacito, Fabio, Roney - Ronald Coase	1	zsh	:
+pane	0	7	:learnVim	0	: 	1	:/Users/roney	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	7	:learnVim	0	: 	2	:/Users/roney	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim --servername VIM
+pane	0	8	:R-lattes	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	0	9	:terminal	0	: 	1	:/Users/roney	1	zsh	:
+pane	1	1	:Vim	1	:*	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	zsh	:
+pane	1	1	:Vim	1	:*	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+window	0	1	0	: 	ccfe,181x48,0,0,1
+window	0	2	0	:-	d602,181x48,0,0{90x48,0,0[90x24,0,0,2,90x23,0,25,3],90x48,91,0[90x24,91,0,4,90x23,91,25,5]}
+window	0	3	1	:*	896f,181x48,0,0{104x48,0,0,6,76x48,105,0[76x43,105,0,7,76x4,105,44,8]}
+window	0	4	0	: 	cd06,181x48,0,0,9
+window	0	5	0	: 	66af,181x48,0,0,10
+window	0	6	0	: 	66b0,181x48,0,0,11
+window	0	7	0	: 	6055,181x48,0,0{78x48,0,0,12,102x48,79,0,13}
+window	0	8	0	: 	66b3,181x48,0,0,14
+window	0	9	0	: 	66b5,181x48,0,0,16
+window	1	1	1	:*	79c6,181x48,0,0[181x33,0,0,19,181x14,0,34,20]
+state	0	0

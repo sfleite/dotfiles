@@ -1,0 +1,36 @@
+pane	0	0	:zsh	1	:*	0	:/Users/roney	1	zsh	:
+pane	current	0	:Ubuntu	0	: 	0	:/Users/roney	1	ssh	:ssh -D 5555 root@104.245.37.78
+pane	current	1	:zsh	1	:*	0	:/Users/roney	1	zsh	:
+pane	current	2	:Amazon	0	:-	0	:/Users/roney	1	zsh	:
+pane	current	3	:cnpq	0	: 	0	:/Users/roney/Desktop/CNPQ	1	zsh	:
+pane	current	3	:cnpq	0	: 	1	:/Users/roney/Desktop/CNPQ	0	zsh	:
+pane	current	3	:cnpq	0	: 	2	:/Users/roney/Desktop/CNPQ	0	zsh	:
+pane	current	4	:t	0	: 	0	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	4	:t	0	: 	1	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	4	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	4	:t	0	: 	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	current	5	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM cap1.tex
+pane	current	5	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	current	6	:tese::tables	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD/figuras	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM tab-grupos-revistas-level2-cap3.tex
+pane	current	6	:tese::tables	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	current	7	:R::respol	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	8	:slidify	0	: 	0	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM index.Rmd
+pane	current	8	:slidify	0	: 	1	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	8	:slidify	0	: 	2	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	9	:R::lattes	0	: 	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	current	10	:terminal	0	: 	0	:/Users/roney	0	zsh	:
+pane	current	10	:terminal	0	: 	1	:/Users/roney	1	zsh	:
+pane	current	10	:terminal	0	: 	2	:/Users/roney	0	zsh	:
+window	0	0	1	:*	ccfe,181x48,0,0,1
+window	current	0	0	: 	c63f,193x46,0,0,2
+window	current	1	1	:*	6352,193x46,0,0,32
+window	current	2	0	:-	6351,193x46,0,0,31
+window	current	3	0	: 	7068,193x46,0,0{121x46,0,0,5,71x46,122,0[71x15,122,0,6,71x30,122,16,7]}
+window	current	4	0	: 	8720,193x46,0,0[193x23,0,0{96x23,0,0,8,96x23,97,0,9},193x22,0,24{96x22,0,24,10,96x22,97,24,11}]
+window	current	5	0	: 	df02,193x46,0,0[193x43,0,0,12,193x2,0,44,24]
+window	current	6	0	: 	3fef,193x46,0,0{104x46,0,0,14,88x46,105,0,25}
+window	current	7	0	: 	6356,193x46,0,0,17
+window	current	8	0	: 	a29c,193x46,0,0{104x46,0,0,18,88x46,105,0[88x29,105,0,19,88x16,105,30,20]}
+window	current	9	0	: 	e350,193x46,0,0,21
+window	current	10	0	: 	4a0f,193x46,0,0{96x46,0,0,22,96x46,97,0[96x23,97,0,26,96x22,97,24,27]}
+state	current	0

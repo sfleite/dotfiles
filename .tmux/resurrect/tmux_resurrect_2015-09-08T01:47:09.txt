@@ -1,0 +1,43 @@
+pane	0	1	:zsh	1	:*	1	:/Users/roney	1	zsh	:
+pane	1	1	:Vim	1	:*	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	zsh	:
+pane	1	1	:Vim	1	:*	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+pane	2	1	:bash	1	:*	1	:/Users/roney	0	zsh	:
+pane	2	1	:bash	1	:*	2	:/Users/roney	1	zsh	:
+pane	current	1	:Ubuntu	0	: 	1	:/Users/roney	1	mosh-client	:mosh-client root@104.245.37.78 | 104.245.37.78 60002
+pane	current	2	:Arch	0	: 	1	:/Users/roney	1	ssh	:ssh roney@200.17.60.42
+pane	current	3	:Amazon	1	:*	1	:/Users/roney	1	ssh	:ssh -i /Users/roney/.ssh/cnpq.pem.txt ubuntu@52.26.192.84
+pane	current	4	:t	0	:-	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	4	:t	0	:-	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	4	:t	0	:-	3	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	4	:t	0	:-	4	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	current	5	:thesis	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM /Users/roney/.zshrc
+pane	current	5	:thesis	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	current	5	:thesis	0	: 	3	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	current	6	:respol	0	: 	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM paper.tex
+pane	current	6	:respol	0	: 	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM bibliografia.bib
+pane	current	6	:respol	0	: 	3	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	zsh	:
+pane	current	7	:R::lattes	0	: 	1	:/Users/roney/OneDrive/Rworkspace/lattes/R	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM -p countAttrs.R downShortId.R files2delete.R getNumId.R readLattes.R selectAttrs.R
+pane	current	7	:R::lattes	0	: 	2	:/Users/roney	0	zsh	:
+pane	current	8	:R::paulinho	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2014 R Paulo Ricardo - import all data	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM paulinho.R
+pane	current	8	:R::paulinho	0	: 	2	:/Users/roney/OneDrive/Rworkspace/2014 R Paulo Ricardo - import all data	0	R	:
+pane	current	9	:learnVim	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2014 R Paulo Ricardo - import all data	1	zsh	:
+pane	current	10	:terminal	0	: 	1	:/Users/roney	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM /Users/roney/OneDrive/Profissional/Unix/comandos.txt
+pane	psql	1	:psql	1	:*	1	:/Users/roney	1	zsh	:
+pane	psql	1	:psql	1	:*	2	:/Users/roney	0	zsh	:
+pane	psql	2	:zsh	0	:-	1	:/Users/roney	1	zsh	:
+window	0	1	1	:*	ccfe,181x48,0,0,1
+window	1	1	1	:*	c638,181x48,0,0[181x33,0,0,2,181x14,0,34,3]
+window	2	1	1	:*	8f72,181x48,0,0{90x48,0,0,4,90x48,91,0,5}
+window	current	1	0	: 	cd03,181x48,0,0,6
+window	current	2	0	: 	cd04,181x48,0,0,7
+window	current	3	1	:*	66b8,181x48,0,0,38
+window	current	4	0	:-	6be5,181x48,0,0{90x48,0,0[90x25,0,0,8,90x22,0,26,9],90x48,91,0[90x25,91,0,10,90x22,91,26,11]}
+window	current	5	0	: 	eacf,181x48,0,0{101x48,0,0,12,79x48,102,0[79x43,102,0,13,79x4,102,44,14]}
+window	current	6	0	: 	e5fe,181x48,0,0{104x48,0,0,15,76x48,105,0[76x39,105,0,16,76x8,105,40,17]}
+window	current	7	0	: 	3061,181x48,0,0{104x48,0,0,18,76x48,105,0,28}
+window	current	8	0	: 	f059,181x48,0,0{104x48,0,0,21,76x48,105,0,36}
+window	current	9	0	: 	66b8,181x48,0,0,19
+window	current	10	0	: 	66b3,181x48,0,0,33
+window	psql	1	1	:*	6844,181x48,0,0[181x32,0,0,24,181x15,0,33,25]
+window	psql	2	0	:-	e6b5,181x48,0,0,26
+state	current	current

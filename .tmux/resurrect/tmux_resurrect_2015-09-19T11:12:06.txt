@@ -1,0 +1,35 @@
+pane	0	0	:[tmux]	1	:*	0	:/Users/roney	1	zsh	:
+pane	current	0	:Ubuntu	0	: 	0	:/Users/roney	1	mosh-client	:mosh-client root@104.245.37.78 | 104.245.37.78 60002
+pane	current	1	:Arch	0	: 	0	:/Users/roney	1	ssh	:ssh -D 5555 roney@200.17.60.42
+pane	current	2	:Amazon	0	: 	0	:/Users/roney	1	ssh	:ssh -i /Users/roney/.ssh/cnpq.pem.txt ubuntu@52.88.144.212
+pane	current	3	:cnpq	0	:-	0	:/Users/roney/Desktop/CNPQ	1	zsh	:
+pane	current	3	:cnpq	0	:-	1	:/Users/roney/Desktop/CNPQ	0	zsh	:
+pane	current	3	:cnpq	0	:-	2	:/Users/roney/Desktop/CNPQ	0	zsh	:
+pane	current	4	:t	1	:*	0	:/Users/roney	1	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	4	:t	1	:*	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	4	:t	1	:*	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	4	:t	1	:*	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	current	5	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM cap5.tex
+pane	current	5	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD/figuras	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM tab-grupos-artigos-level3-cap3.tex
+pane	current	6	:respol	0	: 	0	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM paper.tex
+pane	current	6	:respol	0	: 	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM bibliografia.bib
+pane	current	6	:respol	0	: 	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	zsh	:
+pane	current	7	:R::respol	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	8	:slidify	0	: 	0	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM index.Rmd
+pane	current	8	:slidify	0	: 	1	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	R	:
+pane	current	8	:slidify	0	: 	2	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	9	:R::lattes	0	: 	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	current	10	:terminal	0	: 	0	:/Users/roney	1	zsh	:
+window	0	0	1	:*	ccfd,181x48,0,0,0
+window	current	0	0	: 	ccfe,181x48,0,0,1
+window	current	1	0	: 	e6b6,181x48,0,0,46
+window	current	2	0	: 	e6b3,181x48,0,0,43
+window	current	3	0	:-	efcb,181x48,0,0{115x48,0,0,4,65x48,116,0[65x16,116,0,5,65x31,116,17,6]}
+window	current	4	1	:*	7e1c,181x48,0,0[181x24,0,0{90x24,0,0,7,90x24,91,0,8},181x23,0,25{90x23,0,25,9,90x23,91,25,10}]
+window	current	5	0	: 	4136,181x48,0,0{108x48,0,0,11,72x48,109,0,20}
+window	current	6	0	: 	ee64,181x48,0,0{106x48,0,0,12,74x48,107,0[74x33,107,0,13,74x14,107,34,14]}
+window	current	7	0	: 	66b4,181x48,0,0,15
+window	current	8	0	: 	8ce0,181x48,0,0{104x48,0,0,16,76x48,105,0[76x30,105,0,40,76x17,105,31,44]}
+window	current	9	0	: 	66b7,181x48,0,0,18
+window	current	10	0	: 	e6b1,181x48,0,0,22
+state	current	0

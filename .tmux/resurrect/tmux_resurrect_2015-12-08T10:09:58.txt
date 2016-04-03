@@ -1,0 +1,15 @@
+pane	0	0	:weechat	0	:	0	:/Users/roney	1	ssh	:/usr/local/Cellar/macvim/7.4-79/MacVim.app/Contents/MacOS/Vim --servername VIM maize.R
+ssh root@104.245.37.78
+pane	0	1	:t	0	:	0	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	0	1	:t	0	:	1	:/Users/roney	1	bash	:bash /usr/local/bin/trans pt:en -I
+pane	0	1	:t	0	:	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	0	1	:t	0	:	3	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	0	2	:thesis	1	:*	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/usr/local/Cellar/macvim/7.4-79/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex cap5.tex cap6.tex capa.tex
+pane	0	2	:thesis	1	:*	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/usr/local/Cellar/macvim/7.4-79/MacVim.app/Contents/MacOS/Vim --servername VIM -p tese.bib make
+pane	0	2	:thesis	1	:*	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	0	3	:zsh	0	:-	0	:/Users/roney	1	zsh	:
+window	0	0	0	:	ccfd,181x48,0,0,0
+window	0	1	0	:	5c85,181x48,0,0{90x48,0,0[90x24,0,0,3,90x23,0,25,8],90x48,91,0[90x24,91,0,6,90x23,91,25,7]}
+window	0	2	1	:*	a596,181x48,0,0{104x48,0,0,4,76x48,105,0[76x35,105,0,9,76x12,105,36,10]}
+window	0	3	0	:-	cd02,181x48,0,0,5
+state	0	

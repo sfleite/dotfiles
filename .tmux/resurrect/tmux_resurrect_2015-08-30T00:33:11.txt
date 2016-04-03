@@ -1,0 +1,38 @@
+pane	0	1	:zsh	1	:*	1	:/Users/roney	1	zsh	:
+pane	1	1	:Vim	1	:*	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	1	zsh	:
+pane	1	1	:Vim	1	:*	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - Anpec	0	zsh	:
+pane	2	1	:bash	1	:*	1	:/Users/roney	0	zsh	:
+pane	2	1	:bash	1	:*	2	:/Users/roney	1	zsh	:
+pane	current	1	:Ubuntu	0	:-	1	:/Users/roney	1	mosh-client	:mosh-client --bind-server=any root@104.245.37.78 | 104.245.37.78 60001
+pane	current	2	:Arch	1	:*	1	:/Users/roney	1	ssh	:ssh roney@200.17.60.42
+pane	current	3	:t	0	: 	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	3	:t	0	: 	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	3	:t	0	: 	3	:/Users/roney	1	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	3	:t	0	: 	4	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I
+pane	current	4	:thesis	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM -p abreviacoes.tex abstract.tex agradecimentos.tex apend1.tex apend2.tex apend3.tex cap1.tex cap2.tex cap3.tex cap4.tex cap5.tex cap6.tex capa.tex configuracao.tex dedicatoria.tex epigrafe.tex ficha-catalografica.tex folha-de-aprovacao.tex folha-de-rosto.tex glossario.tex pacotes.tex resumo.tex simbolos.tex tese.tex
+pane	current	4	:thesis	0	: 	2	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM tese.bib
+pane	current	4	:thesis	0	: 	3	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	current	5	:respol	0	: 	1	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM paper.tex
+pane	current	5	:respol	0	: 	2	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM bibliografia.bib
+pane	current	5	:respol	0	: 	3	:/Users/roney/OneDrive/Profissional/Latex/2015 latex Roney, Ballini, Aurora, Ze Maria - respol	0	zsh	:
+pane	current	6	:R::respol	0	: 	1	:/Users/roney	1	zsh	:
+pane	current	7	:learnVim	0	: 	1	:/Users/roney	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM /Users/roney/OneDrive/Profissional/Unix/comandos.txt
+pane	current	7	:learnVim	0	: 	2	:/Users/roney	0	zsh	:
+pane	current	8	:R::lattes	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM xml2sql.R
+pane	current	8	:R::lattes	0	: 	2	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	0	R	:
+pane	current	9	:xmls	0	: 	1	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim --servername VIM -p curriculo-ze.xml LMPLCurriculo.DTD
+pane	current	10	:terminal	0	: 	1	:/Users/roney	1	zsh	:
+window	0	1	1	:*	c0fd,181x45,0,0,0
+window	1	1	1	:*	f532,181x45,0,0[181x31,0,0,1,181x13,0,32,2]
+window	2	1	1	:*	dc61,181x45,0,0{90x45,0,0,3,90x45,91,0,4}
+window	current	1	0	:-	c102,181x45,0,0,5
+window	current	2	1	:*	e0b6,181x45,0,0,27
+window	current	3	0	: 	0952,181x45,0,0{90x45,0,0[90x23,0,0,6,90x21,0,24,7],90x45,91,0[90x23,91,0,8,90x21,91,24,9]}
+window	current	4	0	: 	ae12,181x45,0,0{101x45,0,0,10,79x45,102,0[79x41,102,0,31,79x3,102,42,32]}
+window	current	5	0	: 	9541,181x45,0,0{104x45,0,0,13,76x45,105,0[76x37,105,0,24,76x7,105,38,25]}
+window	current	6	0	: 	60b3,181x45,0,0,14
+window	current	7	0	: 	dcf8,181x45,0,0{101x45,0,0,18,79x45,102,0,29}
+window	current	8	0	: 	004f,181x45,0,0{92x45,0,0,20,88x45,93,0,26}
+window	current	9	0	: 	e0b0,181x45,0,0,21
+window	current	10	0	: 	e0b7,181x45,0,0,28
+state	current	current

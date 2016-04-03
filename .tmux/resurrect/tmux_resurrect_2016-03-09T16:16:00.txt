@@ -1,0 +1,10 @@
+pane	0	0	:zsh	0	:	0	:/Users/roney	1	zsh	:
+pane	0	1	:R::bicudo	0	:-	0	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	0	zsh	:
+pane	0	1	:R::bicudo	0	:-	1	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	0	zsh	:
+pane	0	1	:R::bicudo	0	:-	2	:/Users/roney/OneDrive/Rworkspace/2016 R ICABR - bicudo	1	zsh	:
+pane	0	2	:tese	1	:*	0	:/Users/roney/Google Drive/Profissional/Unicamp.IE.PhD	1	Vim	:/usr/local/Cellar/macvim/7.4-95/MacVim.app/Contents/MacOS/Vim --servername VIM -p cap1.tex cap2.tex cap3.tex cap4.tex cap5.tex capa.tex
+pane	0	2	:tese	1	:*	1	:/Users/roney/Google Drive/Profissional/Unicamp.IE.PhD	0	sh	:sh ./make
+window	0	0	0	:	c95e,272x66,0,0,1
+window	0	1	0	:-	454c,272x66,0,0{131x66,0,0,2,140x66,132,0[140x48,132,0,3,140x17,132,49,4]}
+window	0	2	1	:*	1e4f,272x66,0,0{158x66,0,0,5,113x66,159,0,6}
+state	0	

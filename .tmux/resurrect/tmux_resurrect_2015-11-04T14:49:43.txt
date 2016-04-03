@@ -1,0 +1,29 @@
+pane	0	0	:zsh	1	:*	0	:/Users/roney	1	zsh	:
+pane	current	0	:ubuntu	0	:-	0	:/Users/roney	1	mosh-client	:mosh-client root@104.245.37.78 | 104.245.37.78 60002
+pane	current	1	:frank	1	:*	0	:/Users/roney	1	ssh	:ssh -D 5555 roney@200.17.60.42
+pane	current	2	:amazon	0	:	0	:/Users/roney	1	zsh	:
+pane	current	3	:t	0	:	0	:/Users/roney	1	bash	:bash /usr/local/bin/trans pt:en -I -b
+pane	current	3	:t	0	:	1	:/Users/roney	0	bash	:bash /usr/local/bin/trans en:pt -I -b
+pane	current	3	:t	0	:	2	:/Users/roney	0	bash	:bash /usr/local/bin/trans pt:en -I
+pane	current	3	:t	0	:	3	:/Users/roney	0	zsh	:
+pane	current	4	:tese	0	:	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	current	4	:tese	0	:	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	current	5	:R::respol	0	:	0	:/Users/roney	1	zsh	:
+pane	current	6	:slidify	0	:	0	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	1	zsh	:
+pane	current	6	:slidify	0	:	1	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	6	:slidify	0	:	2	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	7	:R::lattes	0	:	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	current	8	:terminal	0	:	0	:/Users/roney	0	zsh	:
+pane	current	8	:terminal	0	:	1	:/Users/roney	1	zsh	:
+pane	current	8	:terminal	0	:	2	:/Users/roney	0	zsh	:
+window	0	0	1	:*	ccfe,181x48,0,0,1
+window	current	0	0	:-	ccff,181x48,0,0,2
+window	current	1	1	:*	e6b0,181x48,0,0,21
+window	current	2	0	:	cd02,181x48,0,0,5
+window	current	3	0	:	a975,181x47,0,0[181x23,0,0{90x23,0,0,6,90x23,91,0,7},181x24,0,24{90x24,0,24,8,90x24,91,24,9}]
+window	current	4	0	:	b9bd,181x48,0,0[181x33,0,0,10,181x14,0,34,11]
+window	current	5	0	:	66b1,181x48,0,0,12
+window	current	6	0	:	965b,181x48,0,0{98x48,0,0,13,82x48,99,0[82x30,99,0,14,82x17,99,31,15]}
+window	current	7	0	:	66b5,181x48,0,0,16
+window	current	8	0	:	098c,181x48,0,0{90x48,0,0,17,90x48,91,0[90x24,91,0,18,90x23,91,25,19]}
+state	current	0

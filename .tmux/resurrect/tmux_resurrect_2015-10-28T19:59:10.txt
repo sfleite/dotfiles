@@ -1,0 +1,29 @@
+pane	0	0	:zsh	1	:*	0	:/Users/roney	1	zsh	:
+pane	current	0	:Ubuntu	0	:#	0	:/Users/roney	1	ssh	:ssh root@104.245.37.78
+pane	current	1	:frank	1	:*	0	:/Users/roney	1	ssh	:ssh -D 5555 roney@200.17.60.42
+pane	current	2	:amazon	0	:-	0	:/Users/roney	1	ssh	:ssh -i /Users/roney/.ssh/cnpq.pem.txt ubuntu@52.89.247.126
+pane	current	3	:t	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	3	:t	0	: 	1	:/Users/roney	0	zsh	:
+pane	current	3	:t	0	: 	2	:/Users/roney	0	zsh	:
+pane	current	3	:t	0	: 	3	:/Users/roney	0	zsh	:
+pane	current	4	:tese	0	: 	0	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	0	zsh	:
+pane	current	4	:tese	0	: 	1	:/Users/roney/OneDrive/Profissional/Unicamp.IE.PhD	1	zsh	:
+pane	current	5	:R::respol	0	: 	0	:/Users/roney	1	zsh	:
+pane	current	6	:slidify	0	: 	0	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	1	zsh	:
+pane	current	6	:slidify	0	: 	1	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	6	:slidify	0	: 	2	:/Users/roney/OneDrive/Rworkspace/Slidify/qualificacao-doutorado	0	zsh	:
+pane	current	7	:R::lattes	0	: 	0	:/Users/roney/OneDrive/Rworkspace/2015 R Lattes	1	zsh	:
+pane	current	8	:terminal	0	: 	0	:/Users/roney	0	zsh	:
+pane	current	8	:terminal	0	: 	1	:/Users/roney	1	zsh	:
+pane	current	8	:terminal	0	: 	2	:/Users/roney	0	zsh	:
+window	0	0	1	:*	ccfe,181x48,0,0,1
+window	current	0	0	:#	ccff,181x48,0,0,2
+window	current	1	1	:*	e6b3,181x48,0,0,24
+window	current	2	0	:-	e6b5,181x48,0,0,26
+window	current	3	0	: 	1e00,181x48,0,0[181x30,0,0{91x30,0,0,8,89x30,92,0,9},181x17,0,31{90x17,0,31,10,90x17,91,31,11}]
+window	current	4	0	: 	b9c0,181x48,0,0[181x33,0,0,12,181x14,0,34,13]
+window	current	5	0	: 	66b5,181x48,0,0,16
+window	current	6	0	: 	975e,181x48,0,0{98x48,0,0,17,82x48,99,0[82x30,99,0,18,82x17,99,31,19]}
+window	current	7	0	: 	e6af,181x48,0,0,20
+window	current	8	0	: 	e827,181x48,0,0{90x48,0,0,21,90x48,91,0[90x24,91,0,22,90x23,91,25,23]}
+state	current	0
